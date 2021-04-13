@@ -22,7 +22,7 @@ class Action:
         raise NotImplementedError()
 
 class PickupAction(Action):
-    def__init__(self, entity:actor):
+    def __init__(self, entity: Actor):
         super().__init__(entity)
 
     def perform(self) -> None:

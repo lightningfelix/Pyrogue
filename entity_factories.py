@@ -2,7 +2,7 @@ from components.ai import HostileEnemy
 from components import consumable
 from components.fighter import Fighter
 from components.inventory import Inventory
-from entity import Actor
+from entity import Actor, Item
 
 player = Actor(
     char="@",
@@ -19,7 +19,7 @@ orc = Actor(
     name="Orc",
     ai_cls=HostileEnemy,
     fighter=Fighter(hp=10, defense=0, power=3),
-    inventory=Inventory(capactiy=0),
+    inventory=Inventory(capacity=0),
 )
 troll = Actor(
     char="T",
